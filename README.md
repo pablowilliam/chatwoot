@@ -4,7 +4,7 @@
 git clone https://github.com/pablowilliam/chatwoot.git
 cd chatwoot/deployment
 chmod +x *.sh
-sudo 
+sudo ./setup_20.04.sh --install
 ```
 ## Apoie este projeto ☕  
 
