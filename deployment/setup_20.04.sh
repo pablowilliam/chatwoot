@@ -338,7 +338,7 @@ function setup_chatwoot() {
   rvm install "ruby-3.3.3"
   rvm use 3.3.3 --default
 
-  git clone https://github.com/pablowilliam/chatwoot-w.git
+  git clone https://github.com/pablowilliam/chatwoot.git
   cd chatwoot
   git checkout "$BRANCH"
   chmod -R 777 bin
@@ -384,12 +384,12 @@ EOF
 #   None
 ##############################################################################
 function configure_systemd_services() {
-  cp /home/chatwoot/chatwoot-w/deployment/chatwoot-web.1.service /etc/systemd/system/chatwoot-web.1.service
-  cp /home/chatwoot/chatwoot-w/deployment/chatwoot-worker.1.service /etc/systemd/system/chatwoot-worker.1.service
-  cp /home/chatwoot/chatwoot-w/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
+  cp /home/chatwoot/chatwoot/deployment/chatwooteb.1.service /etc/systemd/system/chatwooteb.1.service
+  cp /home/chatwoot/chatwoot/deployment/chatwootorker.1.service /etc/systemd/system/chatwootorker.1.service
+  cp /home/chatwoot/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
 
-  cp /home/chatwoot/chatwoot-w/deployment/chatwoot /etc/sudoers.d/chatwoot
-  cp /home/chatwoot/chatwoot-w/deployment/setup_20.04.sh /usr/local/bin/cwctl
+  cp /home/chatwoot/chatwoot/deployment/chatwoot /etc/sudoers.d/chatwoot
+  cp /home/chatwoot/chatwoot/deployment/setup_20.04.sh /usr/local/bin/cwctl
   chmod +x /usr/local/bin/cwctl
 
   systemctl enable chatwoot.target
@@ -415,7 +415,7 @@ function setup_ssl() {
     echo "debug: letsencrypt email: $le_email"
   fi
   curl https://ssl-config.mozilla.org/ffdhe4096.txt >> /etc/ssl/dhparam
-  wget https://github.com/pablowilliam/chatwoot-w/blob/main/deployment/nginx_chatwoot.conf
+  wget https://github.com/pablowilliam/chatwoot/blob/main/deployment/nginx_chatwoot.conf
   cp nginx_chatwoot.conf /etc/nginx/sites-available/nginx_chatwoot.conf
   certbot certonly --non-interactive --agree-tos --nginx -m "$le_email" -d "$domain_name"
   sed -i "s/chatwoot.domain.com/$domain_name/g" /etc/nginx/sites-available/nginx_chatwoot.conf
@@ -664,10 +664,10 @@ EOF
 ##############################################################################
 function get_logs() {
   if [ "$SERVICE" == "worker" ]; then
-    journalctl -u chatwoot-worker.1.service -f
+    journalctl -u chatwootorker.1.service -f
   fi
   if [ "$SERVICE" == "web" ]; then
-    journalctl -u chatwoot-web.1.service -f
+    journalctl -u chatwooteb.1.service -f
   fi
 }
 
@@ -837,11 +837,11 @@ function upgrade() {
 EOF
 
   # Copy the updated targets
-  cp /home/chatwoot/chatwoot-w/deployment/chatwoot-web.1.service /etc/systemd/system/chatwoot-web.1.service
-  cp /home/chatwoot/chatwoot-w/deployment/chatwoot-worker.1.service /etc/systemd/system/chatwoot-worker.1.service
-  cp /home/chatwoot/chatwoot-w/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
+  cp /home/chatwoot/chatwoot/deployment/chatwooteb.1.service /etc/systemd/system/chatwooteb.1.service
+  cp /home/chatwoot/chatwoot/deployment/chatwootorker.1.service /etc/systemd/system/chatwootorker.1.service
+  cp /home/chatwoot/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
 
-  cp /home/chatwoot/chatwoot-w/deployment/chatwoot /etc/sudoers.d/chatwoot
+  cp /home/chatwoot/chatwoot/deployment/chatwoot /etc/sudoers.d/chatwoot
   # TODO:(@vn) handle cwctl updates
 
   systemctl daemon-reload
@@ -930,7 +930,7 @@ function version() {
 function cwctl_upgrade_check() {
     echo "Checking for cwctl updates..."
 
-    local remote_version_url="https://raw.githubusercontent.com/pablowilliam/chatwoot-w/main/VERSION_CWCTL"
+    local remote_version_url="https://raw.githubusercontent.com/pablowilliam/chatwoot/main/VERSION_CWCTL"
     local remote_version=$(curl -s "$remote_version_url")
 
     #Check if pip is not installed, and install it if not
@@ -970,7 +970,7 @@ function cwctl_upgrade_check() {
 #   None
 ##############################################################################
 function upgrade_cwctl() {
-    wget https://github.com/pablowilliam/chatwoot-w/blob/main/deployment/install.sh -O /usr/local/bin/cwctl > /dev/null 2>&1 && chmod +x /usr/local/bin/cwctl
+    wget https://github.com/pablowilliam/chatwoot/blob/main/deployment/install.sh -O /usr/local/bin/cwctl > /dev/null 2>&1 && chmod +x /usr/local/bin/cwctl
 }
 
 ##############################################################################
