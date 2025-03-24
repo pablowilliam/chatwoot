@@ -386,12 +386,12 @@ EOF
 #   None
 ##############################################################################
 function configure_systemd_services() {
-  cp /home/chatwoot/chatwoot/deployment/chatwooteb.1.service /etc/systemd/system/chatwooteb.1.service
-  cp /home/chatwoot/chatwoot/deployment/chatwootorker.1.service /etc/systemd/system/chatwootorker.1.service
-  cp /home/chatwoot/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
+  cp /root/chatwoot/deployment/chatwooteb.1.service /etc/systemd/system/chatwooteb.1.service
+  cp /root/chatwoot/deployment/chatwootorker.1.service /etc/systemd/system/chatwootorker.1.service
+  cp /root/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
 
-  cp /home/chatwoot/chatwoot/deployment/chatwoot /etc/sudoers.d/chatwoot
-  cp /home/chatwoot/chatwoot/deployment/setup_20.04.sh /usr/local/bin/cwctl
+  cp /root/chatwoot/deployment/chatwoot /etc/sudoers.d/chatwoot
+  cp /root/chatwoot/deployment/setup_20.04.sh /usr/local/bin/cwctl
   chmod +x /usr/local/bin/cwctl
 
   systemctl enable chatwoot.target
@@ -839,11 +839,11 @@ function upgrade() {
 EOF
 
   # Copy the updated targets
-  cp /home/chatwoot/chatwoot/deployment/chatwooteb.1.service /etc/systemd/system/chatwooteb.1.service
-  cp /home/chatwoot/chatwoot/deployment/chatwootorker.1.service /etc/systemd/system/chatwootorker.1.service
-  cp /home/chatwoot/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
+  cp /root/chatwoot/deployment/chatwooteb.1.service /etc/systemd/system/chatwooteb.1.service
+  cp /root/chatwoot/deployment/chatwootorker.1.service /etc/systemd/system/chatwootorker.1.service
+  cp /root/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
 
-  cp /home/chatwoot/chatwoot/deployment/chatwoot /etc/sudoers.d/chatwoot
+  cp /root/chatwoot/deployment/chatwoot /etc/sudoers.d/chatwoot
   # TODO:(@vn) handle cwctl updates
 
   systemctl daemon-reload
