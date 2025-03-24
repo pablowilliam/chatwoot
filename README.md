@@ -1,8 +1,8 @@
 ## Instalação
 
 ```bash
-git clone https://github.com/pablowilliam/chatwoot-w.git
-cd chatwoot-w/deployment
+git clone https://github.com/pablowilliam/chatwoot.git
+cd chatwoot/deployment
 chmod +x *.sh
 sudo ./setup_20.04.sh --install
 ```
