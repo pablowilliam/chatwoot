@@ -384,8 +384,8 @@ EOF
 #   None
 ##############################################################################
 function configure_systemd_services() {
-  cp /home/chatwoot/chatwoot/deployment/chatwooteb.1.service /etc/systemd/system/chatwooteb.1.service
-  cp /home/chatwoot/chatwoot/deployment/chatwootorker.1.service /etc/systemd/system/chatwootorker.1.service
+  cp /home/chatwoot/chatwoot/deployment/chatwoot-web.1.service /etc/systemd/system/chatwoot-web.1.service
+  cp /home/chatwoot/chatwoot/deployment/chatwoot-worker.1.service /etc/systemd/system/chatwoot-worker.1.service
   cp /home/chatwoot/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
 
   cp /home/chatwoot/chatwoot/deployment/chatwoot /etc/sudoers.d/chatwoot
@@ -664,10 +664,10 @@ EOF
 ##############################################################################
 function get_logs() {
   if [ "$SERVICE" == "worker" ]; then
-    journalctl -u chatwootorker.1.service -f
+    journalctl -u chatwoot-worker.1.service -f
   fi
   if [ "$SERVICE" == "web" ]; then
-    journalctl -u chatwooteb.1.service -f
+    journalctl -u chatwoot-web.1.service -f
   fi
 }
 
@@ -837,8 +837,8 @@ function upgrade() {
 EOF
 
   # Copy the updated targets
-  cp /home/chatwoot/chatwoot/deployment/chatwooteb.1.service /etc/systemd/system/chatwooteb.1.service
-  cp /home/chatwoot/chatwoot/deployment/chatwootorker.1.service /etc/systemd/system/chatwootorker.1.service
+  cp /home/chatwoot/chatwoot/deployment/chatwoot-web.1.service /etc/systemd/system/chatwoot-web.1.service
+  cp /home/chatwoot/chatwoot/deployment/chatwoot-worker.1.service /etc/systemd/system/chatwoot-worker.1.service
   cp /home/chatwoot/chatwoot/deployment/chatwoot.target /etc/systemd/system/chatwoot.target
 
   cp /home/chatwoot/chatwoot/deployment/chatwoot /etc/sudoers.d/chatwoot
