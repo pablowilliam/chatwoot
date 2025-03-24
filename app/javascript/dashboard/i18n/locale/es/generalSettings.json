@@ -1,0 +1,174 @@
+{
+  "GENERAL_SETTINGS": {
+    "TITLE": "Configuración de la cuenta",
+    "SUBMIT": "Actualizar configuración",
+    "BACK": "Atrás",
+    "DISMISS": "Descartar",
+    "UPDATE": {
+      "ERROR": "No se pudo actualizar la configuración, ¡inténtalo de nuevo!",
+      "SUCCESS": "Configuración de la cuenta actualizada con éxito"
+    },
+    "FORM": {
+      "ERROR": "Por favor, corrige los errores del formulario",
+      "GENERAL_SECTION": {
+        "TITLE": "Configuración general",
+        "NOTE": ""
+      },
+      "ACCOUNT_ID": {
+        "TITLE": "ID de la cuenta",
+        "NOTE": "Este ID es necesario si estás construyendo una integración basada en API"
+      },
+      "NAME": {
+        "LABEL": "Nombre de la cuenta",
+        "PLACEHOLDER": "El nombre de tu cuenta",
+        "ERROR": "Por favor, introduce un nombre de cuenta válido"
+      },
+      "LANGUAGE": {
+        "LABEL": "Idioma del sitio",
+        "PLACEHOLDER": "El nombre de tu cuenta",
+        "ERROR": ""
+      },
+      "DOMAIN": {
+        "LABEL": "Dominio de correo electrónico entrante",
+        "PLACEHOLDER": "El dominio donde recibirás los correos electrónicos",
+        "ERROR": ""
+      },
+      "SUPPORT_EMAIL": {
+        "LABEL": "Correo electrónico de soporte",
+        "PLACEHOLDER": "El correo electrónico de soporte de tu empresa",
+        "ERROR": ""
+      },
+      "AUTO_RESOLVE_DURATION": {
+        "LABEL": "Número de días después de los cuales un ticket debe resolverse automáticamente si no hay actividad",
+        "PLACEHOLDER": "30",
+        "ERROR": "Por favor, introduce una duración válida para la resolución automática (mínimo 1 día y máximo 999 días)"
+      },
+      "FEATURES": {
+        "INBOUND_EMAIL_ENABLED": "La continuidad de la conversación con correos electrónicos está habilitada para tu cuenta.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Ahora puedes recibir correos electrónicos en tu dominio personalizado."
+      }
+    },
+    "UPDATE_CHATWOOT": "Una actualización %{latestChatwootVersion} para Chatwoot está disponible. Por favor, actualiza tu instancia.",
+    "LEARN_MORE": "Aprende más",
+    "PAYMENT_PENDING": "Tu pago está pendiente. Por favor, actualiza tu información de pago para continuar usando Chatwoot",
+    "LIMITS_UPGRADE": "Tu cuenta ha excedido los límites de uso, por favor, actualiza tu plan para continuar usando Chatwoot",
+    "OPEN_BILLING": "Abrir facturación"
+  },
+  "FORMS": {
+    "MULTISELECT": {
+      "ENTER_TO_SELECT": "Presiona enter para seleccionar",
+      "ENTER_TO_REMOVE": "Presiona enter para eliminar",
+      "SELECT_ONE": "Selecciona uno",
+      "SELECT": "Seleccionar"
+    }
+  },
+  "NOTIFICATIONS_PAGE": {
+    "HEADER": "Notificaciones",
+    "MARK_ALL_DONE": "Marcar todo como hecho",
+    "DELETE_TITLE": "eliminado",
+    "UNREAD_NOTIFICATION": {
+      "TITLE": "Notificaciones no leídas",
+      "ALL_NOTIFICATIONS": "Ver todas las notificaciones",
+      "LOADING_UNREAD_MESSAGE": "Cargando notificaciones no leídas...",
+      "EMPTY_MESSAGE": "No tienes notificaciones no leídas"
+    },
+    "LIST": {
+      "LOADING_MESSAGE": "Cargando notificaciones...",
+      "404": "No hay notificaciones",
+      "TABLE_HEADER": [
+        "Nombre",
+        "Número de teléfono",
+        "Conversaciones",
+        "Último contacto"
+      ]
+    },
+    "TYPE_LABEL": {
+      "conversation_creation": "Nueva conversación",
+      "conversation_assignment": "Conversación asignada",
+      "assigned_conversation_new_message": "Nuevo mensaje",
+      "participating_conversation_new_message": "Nuevo mensaje",
+      "conversation_mention": "Mención",
+      "sla_missed_first_response": "SLA no cumplido",
+      "sla_missed_next_response": "SLA no cumplido",
+      "sla_missed_resolution": "SLA no cumplido"
+    }
+  },
+  "NETWORK": {
+    "NOTIFICATION": {
+      "OFFLINE": "Desconectado",
+      "RECONNECTING": "Reconectando...",
+      "RECONNECT_SUCCESS": "Reconectado"
+    },
+    "BUTTON": {
+      "REFRESH": "Actualizar"
+    }
+  },
+  "COMMAND_BAR": {
+    "SEARCH_PLACEHOLDER": "Buscar o saltar a",
+    "SECTIONS": {
+      "GENERAL": "General",
+      "REPORTS": "Informes",
+      "CONVERSATION": "Conversación",
+      "BULK_ACTIONS": "Acciones masivas",
+      "CHANGE_ASSIGNEE": "Cambiar asignado",
+      "CHANGE_PRIORITY": "Cambiar prioridad",
+      "CHANGE_TEAM": "Cambiar equipo",
+      "SNOOZE_CONVERSATION": "Posponer conversación",
+      "ADD_LABEL": "Agregar etiqueta a la conversación",
+      "REMOVE_LABEL": "Eliminar etiqueta de la conversación",
+      "SETTINGS": "Configuración",
+      "AI_ASSIST": "Asistencia AI",
+      "APPEARANCE": "Apariencia",
+      "SNOOZE_NOTIFICATION": "Posponer notificación"
+    },
+    "COMMANDS": {
+      "GO_TO_CONVERSATION_DASHBOARD": "Ir al panel de conversación",
+      "GO_TO_CONTACTS_DASHBOARD": "Ir al panel de contactos",
+      "GO_TO_REPORTS_OVERVIEW": "Ir a la vista general de informes",
+      "GO_TO_CONVERSATION_REPORTS": "Ir a los informes de conversación",
+      "GO_TO_AGENT_REPORTS": "Ir a los informes de agentes",
+      "GO_TO_LABEL_REPORTS": "Ir a los informes de etiquetas",
+      "GO_TO_INBOX_REPORTS": "Ir a los informes de bandeja de entrada",
+      "GO_TO_TEAM_REPORTS": "Ir a los informes de equipo",
+      "GO_TO_SETTINGS_AGENTS": "Ir a la configuración de agentes",
+      "GO_TO_SETTINGS_TEAMS": "Ir a la configuración de equipos",
+      "GO_TO_SETTINGS_INBOXES": "Ir a la configuración de bandejas de entrada",
+      "GO_TO_SETTINGS_LABELS": "Ir a la configuración de etiquetas",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "Ir a la configuración de respuestas predefinidas",
+      "GO_TO_SETTINGS_APPLICATIONS": "Ir a la configuración de aplicaciones",
+      "GO_TO_SETTINGS_ACCOUNT": "Ir a la configuración de la cuenta",
+      "GO_TO_SETTINGS_PROFILE": "Ir a la configuración del perfil",
+      "GO_TO_NOTIFICATIONS": "Ir a notificaciones",
+      "ADD_LABELS_TO_CONVERSATION": "Agregar etiqueta a la conversación",
+      "ASSIGN_AN_AGENT": "Asignar un agente",
+      "AI_ASSIST": "Asistencia AI",
+      "ASSIGN_PRIORITY": "Asignar prioridad",
+      "ASSIGN_A_TEAM": "Asignar un equipo",
+      "MUTE_CONVERSATION": "Silenciar conversación",
+      "UNMUTE_CONVERSATION": "Activar sonido de la conversación",
+      "REMOVE_LABEL_FROM_CONVERSATION": "Eliminar etiqueta de la conversación",
+      "REOPEN_CONVERSATION": "Reabrir conversación",
+      "RESOLVE_CONVERSATION": "Resolver conversación",
+      "SEND_TRANSCRIPT": "Enviar una transcripción por correo electrónico",
+      "SNOOZE_CONVERSATION": "Posponer conversación",
+      "UNTIL_NEXT_REPLY": "Hasta la próxima respuesta",
+      "UNTIL_NEXT_WEEK": "Hasta la próxima semana",
+      "UNTIL_TOMORROW": "Hasta mañana",
+      "UNTIL_NEXT_MONTH": "Hasta el próximo mes",
+      "AN_HOUR_FROM_NOW": "Hasta dentro de una hora",
+      "UNTIL_CUSTOM_TIME": "Personalizado...",
+      "CHANGE_APPEARANCE": "Cambiar apariencia",
+      "LIGHT_MODE": "Claro",
+      "DARK_MODE": "Oscuro",
+      "SYSTEM_MODE": "Sistema",
+      "SNOOZE_NOTIFICATION": "Posponer notificación"
+    }
+  },
+  "DASHBOARD_APPS": {
+    "LOADING_MESSAGE": "Cargando aplicación del panel..."
+  },
+  "COMMON": {
+    "OR": "O",
+    "CLICK_HERE": "haz clic aquí"
+  }
+}

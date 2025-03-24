@@ -1,0 +1,73 @@
+<script>
+import { mapGetters } from 'vuex';
+import PageHeader from '../../SettingsSubPageHeader.vue';
+import Twilio from './Twilio.vue';
+import ThreeSixtyDialogWhatsapp from './360DialogWhatsapp.vue';
+import CloudWhatsapp from './CloudWhatsapp.vue';
+import CloudEmbededSignupWhatsapp from './CloudEmbededSignupWhatsapp.vue';
+import globalConfigMixin from 'shared/mixins/globalConfigMixin'; // Asegúrate de que la ruta sea correcta
+
+export default {
+  components: {
+    PageHeader,
+    Twilio,
+    ThreeSixtyDialogWhatsapp,
+    CloudWhatsapp,
+    CloudEmbededSignupWhatsapp,
+  },
+  mixins: [globalConfigMixin],
+  computed: {
+    ...mapGetters({
+      globalConfig: 'globalConfig/get',
+    }),
+    wabaEmbeddedSignup() {
+      return {
+      isEmbeddedSignupEnabled: this.globalConfig.wabaEmbeddedSignup,
+      };
+    },
+  },
+  data() {
+    return {
+      provider: 'whatsapp_cloud',
+      isEmbeddedSignupEnabled: false,
+    };
+  },
+  created() {
+    // console.log(this.globalConfig); // Verifica si globalConfig está trayendo los datos correctos
+    // console.log(this.globalConfig.wabaEmbeddedSignup); // Asegúrate de que esta propiedad existe
+    this.isEmbeddedSignupEnabled = this.globalConfig.wabaEmbeddedSignup || false;
+  },
+};
+</script>
+
+<template>
+  <div
+    class="border border-slate-25 dark:border-slate-800/60 bg-white dark:bg-slate-900 h-full p-6 w-full max-w-full md:w-3/4 md:max-w-[75%] flex-shrink-0 flex-grow-0"
+  >
+    <PageHeader
+      :header-title="$t('INBOX_MGMT.ADD.WHATSAPP.TITLE')"
+      :header-content="$t('INBOX_MGMT.ADD.WHATSAPP.DESC')"
+    />
+    <div class="w-[65%] flex-shrink-0 flex-grow-0 max-w-[65%]">
+      <label>
+        {{ $t('INBOX_MGMT.ADD.WHATSAPP.PROVIDERS.LABEL') }}
+        <select v-model="provider">
+          <option value="whatsapp_cloud">
+            {{ $t('INBOX_MGMT.ADD.WHATSAPP.PROVIDERS.WHATSAPP_CLOUD') }}
+          </option>
+          <option v-if="isEmbeddedSignupEnabled" value="embeded_signup">
+            Embedded Signup
+          </option>
+          <option value="twilio">
+            {{ $t('INBOX_MGMT.ADD.WHATSAPP.PROVIDERS.TWILIO') }}
+          </option>
+        </select>
+      </label>
+    </div>
+
+    <Twilio v-if="provider === 'twilio'" type="whatsapp" />
+    <ThreeSixtyDialogWhatsapp v-else-if="provider === '360dialog'" />
+    <CloudWhatsapp v-else-if="provider === 'whatsapp_cloud'" />
+    <CloudEmbededSignupWhatsapp v-else-if="provider === 'embeded_signup'" />
+  </div>
+</template>

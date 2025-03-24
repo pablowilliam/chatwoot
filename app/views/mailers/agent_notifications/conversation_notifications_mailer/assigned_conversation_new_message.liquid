@@ -1,0 +1,7 @@
+<p>{{ 'mailers.agent_notifications.templates.conversation.greeting' | t }}</p>
+
+<p>{{ 'mailers.agent_notifications.templates.conversation.assigned_new_message' | t: conversation_id: conversation.display_id }}</p>
+
+<p>
+<a href="{{action_url}}">{{ 'mailers.agent_notifications.templates.conversation.view_conversation' | t }}</a>
+</p>

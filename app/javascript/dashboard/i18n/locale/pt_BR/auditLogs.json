@@ -1,0 +1,70 @@
+{
+  "AUDIT_LOGS": {
+    "HEADER": "Audit Logs",
+    "HEADER_BTN_TXT": "Add Audit Logs",
+    "LOADING": "Fetching Audit Logs",
+    "DESCRIPTION": "Os Logs de Auditoria mantêm um registro das atividades em sua conta, permitindo que você rastreie e audite sua conta, equipe ou serviços.",
+    "LEARN_MORE": "Saiba mais sobre logs de auditoria",
+    "SEARCH_404": "Não há itens correspondentes a esta consulta",
+    "SIDEBAR_TXT": "<p><b>Logs de Auditoria</b> </p><p> Os Logs de Auditoria são trilhas para eventos e ações em um Sistema Chatwoot. </p>",
+    "LIST": {
+      "404": "Não há Logs de Auditoria disponíveis nesta conta.",
+      "TITLE": "Gerenciar Logs de Auditoria",
+      "DESC": "Os Logs de Auditoria são trilhas para eventos e ações em um Sistema Chatwoot.",
+      "TABLE_HEADER": ["Activity", "Time", "IP Address"]
+    },
+    "API": {
+      "SUCCESS_MESSAGE": "AuditLogs retrieved successfully",
+      "ERROR_MESSAGE": "Could not connect to Woot Server, Please try again later"
+    },
+    "DEFAULT_USER": "System",
+    "AUTOMATION_RULE": {
+      "ADD": "%{agentName} criou uma nova regra de automação (#%{id})",
+      "EDIT": "%{agentName} atualizou uma regra de automação (#%{id})",
+      "DELETE": "%{agentName} deletou uma regra de automação (#%{id})"
+    },
+    "ACCOUNT_USER": {
+      "ADD": "%{agentName} convidou %{invitee} para a conta como %{role}",
+      "EDIT": {
+        "SELF": "%{agentName} mudou seus %{attributes} para %{values}",
+        "OTHER": "%{agentName} mudou %{attributes} de %{user} para %{values}",
+        "DELETED": "%{agentName} mudou %{attributes} de um usuário deletado para %{values}"
+      }
+    },
+    "INBOX": {
+      "ADD": "%{agentName} criou uma nova caixa de entrada (#%{id})",
+      "EDIT": "%{agentName} atualizou uma caixa de entrada (#%{id})",
+      "DELETE": "%{agentName} deletou uma caixa de entrada (#%{id})"
+    },
+    "WEBHOOK": {
+      "ADD": "%{agentName} criou um novo webhook (#%{id})",
+      "EDIT": "%{agentName} atualizou um webhook (#%{id})",
+      "DELETE": "%{agentName} deletou um webhook (#%{id})"
+    },
+    "USER_ACTION": {
+      "SIGN_IN": "%{agentName} entrou",
+      "SIGN_OUT": "%{agentName} saiu"
+    },
+    "TEAM": {
+      "ADD": "%{agentName} criou uma nova equipe (#%{id})",
+      "EDIT": "%{agentName} atualizou uma equipe (#%{id})",
+      "DELETE": "%{agentName} deletou uma equipe (#%{id})"
+    },
+    "MACRO": {
+      "ADD": "%{agentName} criou um novo macro (#%{id})",
+      "EDIT": "%{agentName} atualizou um macro (#%{id})",
+      "DELETE": "%{agentName} deletou um macro (#%{id})"
+    },
+    "INBOX_MEMBER": {
+      "ADD": "%{agentName} adicionou %{user} à caixa de entrada (#%{inbox_id})",
+      "REMOVE": "%{agentName} removeu %{user} da caixa de entrada (#%{inbox_id})"
+    },
+    "TEAM_MEMBER": {
+      "ADD": "%{agentName} adicionou %{user} à equipe (#%{team_id})",
+      "REMOVE": "%{agentName} removeu %{user} da equipe (#%{team_id})"
+    },
+    "ACCOUNT": {
+      "EDIT": "%{agentName} atualizou a configuração da conta (#%{id})"
+    }
+  }
+}

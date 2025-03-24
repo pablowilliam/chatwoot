@@ -1,0 +1,7 @@
+<p>{{ 'mailers.agent_notifications.templates.conversation.greeting' | t }}</p>
+
+<p>{{ 'mailers.agent_notifications.templates.conversation.sla.next_response_missed' | t: conversation_id: conversation.display_id, inbox_name: inbox.name, sla_policy_name: sla_policy.name }}</p>
+
+<p>
+  <a href="{{action_url}}">{{ 'mailers.agent_notifications.templates.conversation.view_conversation' | t }}</a>
+</p>

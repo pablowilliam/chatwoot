@@ -1,0 +1,59 @@
+{
+  "CONTACTS_FILTER": {
+    "TITLE": "Filtrar Contactos",
+    "SUBTITLE": "Agregue filtros a continuación y presione 'Enviar' para filtrar contactos.",
+    "EDIT_CUSTOM_SEGMENT": "Editar Segmento",
+    "CUSTOM_VIEWS_SUBTITLE": "Agregue o elimine filtros y actualice su segmento.",
+    "ADD_NEW_FILTER": "Agregar Filtro",
+    "CLEAR_ALL_FILTERS": "Borrar Todos los Filtros",
+    "FILTER_DELETE_ERROR": "Debe tener al menos un filtro para guardar",
+    "SUBMIT_BUTTON_LABEL": "Enviar",
+    "UPDATE_BUTTON_LABEL": "Actualizar Segmento",
+    "CANCEL_BUTTON_LABEL": "Cancelar",
+    "CLEAR_BUTTON_LABEL": "Borrar Filtros",
+    "EMPTY_VALUE_ERROR": "El valor es requerido",
+    "SEGMENT_LABEL": "Nombre del Segmento",
+    "SEGMENT_QUERY_LABEL": "Consulta del Segmento",
+    "TOOLTIP_LABEL": "Filtrar contactos",
+    "QUERY_DROPDOWN_LABELS": {
+      "AND": "Y",
+      "OR": "O"
+    },
+    "OPERATOR_LABELS": {
+      "equal_to": "Igual a",
+      "not_equal_to": "No igual a",
+      "contains": "Contiene",
+      "does_not_contain": "No contiene",
+      "is_present": "Está presente",
+      "is_not_present": "No está presente",
+      "is_greater_than": "Es mayor que",
+      "is_lesser_than": "Es menor que",
+      "days_before": "Es x días antes"
+    },
+    "ERRORS": {
+      "VALUE_REQUIRED": "El valor es requerido"
+    },
+    "ATTRIBUTES": {
+      "NAME": "Nombre",
+      "EMAIL": "Correo electrónico",
+      "PHONE_NUMBER": "Número de teléfono",
+      "IDENTIFIER": "Identificador",
+      "CITY": "Ciudad",
+      "COUNTRY": "País",
+      "CUSTOM_ATTRIBUTE_LIST": "Lista",
+      "CUSTOM_ATTRIBUTE_TEXT": "Texto",
+      "CUSTOM_ATTRIBUTE_NUMBER": "Número",
+      "CUSTOM_ATTRIBUTE_LINK": "Enlace",
+      "CUSTOM_ATTRIBUTE_CHECKBOX": "Caja de verificación",
+      "CREATED_AT": "Creado en",
+      "LAST_ACTIVITY": "Última Actividad",
+      "REFERER_LINK": "Enlace de referencia",
+      "BLOCKED": "Bloqueado"
+    },
+    "GROUPS": {
+      "STANDARD_FILTERS": "Filtros Estándar",
+      "ADDITIONAL_FILTERS": "Filtros Adicionales",
+      "CUSTOM_ATTRIBUTES": "Atributos Personalizados"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+es:
+  mailers:
+    administrator_notifications:
+      channel_notifications:
+        slack_disconnect:
+          subject: "Su integración con Slack ha expirado"
+        dialogflow_disconnect:
+          subject: "Su integración con Dialogflow fue desconectada"
+        facebook_disconnect:
+          subject: "La conexión con su página de Facebook ha expirado"
+        whatsapp_disconnect:
+          subject: "Su conexión con WhatsApp ha expirado"
+        email_disconnect:
+          subject: "Su bandeja de entrada de correo ha sido desconectada. Por favor, actualice las credenciales de SMTP/IMAP"
+        contact_import_complete:
+          subject: "Importación de Contactos Completada"
+        contact_import_failed:
+          subject: "Importación de Contactos Fallida"
+        contact_export_complete:
+          subject: "Su archivo de exportación de contactos está disponible para descargar"
+        automation_rule_disabled:
+          subject: "Regla de automatización deshabilitada debido a errores de validación"
+      templates:
+        automation_rule:
+          greeting: "Hola"
+          disabled:
+            message: "La regla de automatización <b>%{rule_name}</b> ha sido desactivada porque contiene condiciones inválidas."
+            explanation: "Esto suele ocurrir cuando eliminas atributos personalizados que aún se están utilizando en las reglas de automatización."
+            action: "Haz clic aquí para actualizar las condiciones."
+        contact:
+          export:
+            message: "Tu archivo de exportación de contactos está listo."
+            action: "Haz clic aquí para descargar."
+          import:
+            complete:
+              success: "Se importaron exitosamente %{imported} contactos."
+              failed: "No se pudieron importar %{failed} contactos."
+              action: "Haz clic aquí para ver los registros fallidos."
+            failed:
+              message: "La importación de contactos ha fallado."
+              explanation: "Por favor, verifica el formato del archivo e inténtalo de nuevo."
+        channel:
+          slack:
+            message: "Tu integración con Slack ha expirado."
+            action: "Haz clic aquí para reconectar."
+          dialogflow:
+            message: "Tu integración con Dialogflow ha sido desconectada."
+            action: "Haz clic aquí para reconectar."
+          facebook:
+            message: "Tu conexión con Facebook ha expirado."
+            action: "Haz clic aquí para reconectar."
+          whatsapp:
+            message: "Tu conexión con WhatsApp ha expirado."
+            action: "Haz clic aquí para reconectar."
+          email:
+            message: "Tu bandeja de entrada de correo ha sido desconectada."
+            explanation: "Por favor, actualiza las credenciales de SMTP/IMAP."
+            action: "Haz clic aquí para actualizar."
+    agent_notifications:
+      conversation_notifications:
+        conversation_creation:
+          subject: "%{agent_name}, Se ha creado una nueva conversación [ID - %{conversation_id}] en %{inbox_name}"
+        conversation_assignment:
+          subject: "%{agent_name}, Se te ha asignado una nueva conversación [ID - %{conversation_id}]"
+        conversation_mention:
+          subject: "%{agent_name}, Has sido mencionado en la conversación [ID - %{conversation_id}]"
+        assigned_conversation_new_message:
+          subject: "%{agent_name}, Nuevo mensaje en tu conversación asignada [ID - %{conversation_id}]"
+        participating_conversation_new_message:
+          subject: "%{agent_name}, Nuevo mensaje en tu conversación participante [ID - %{conversation_id}]"
+      templates:
+        conversation:
+          greeting: "¡Hola!"
+          assigned_new_message: "Has recibido un nuevo mensaje en la conversación #%{conversation_id} asignada a ti."
+          participating_new_message: "Has recibido un nuevo mensaje en una conversación en la que estás participando #%{conversation_id}."
+          assignment:
+            message: "¡Es hora de salvar el mundo! Se te ha asignado una nueva conversación #%{conversation_id}."
+          creation:
+            message: "Se ha creado una nueva conversación (#%{conversation_id}) en %{inbox_name}."
+          mention:
+            message: "Has sido mencionado en una conversación por %{user_name} en #%{conversation_id}."
+          previous_messages: "Mensajes anteriores"
+          you: "Tú"
+          attachment: "Archivo adjunto"
+          view_attachment: "Ver archivo adjunto"
+          view_conversation: "Ver conversación"
+          email_details:
+            from: "De:"
+            subject: "Asunto:"
+            to: "Para:"
+            cc: "CC:"
+            bcc: "BCC:"
+          sla:
+            first_response_missed: "La conversación #%{conversation_id} en %{inbox_name} ha perdido el SLA para la primera respuesta bajo la política %{sla_policy_name}."
+            next_response_missed: "La conversación #%{conversation_id} en %{inbox_name} ha perdido el SLA para la siguiente respuesta bajo la política %{sla_policy_name}."
+            resolution_missed: "La conversación #%{conversation_id} en %{inbox_name} ha perdido el SLA para la resolución bajo la política %{sla_policy_name}."
+    team_notifications:
+      automation:
+        subject: "Este correo ha sido enviado a través de acciones de reglas de automatización."
+      templates:
+        automation:
+          greeting: "Este es un correo del Sistema de Automatización"
+          conversation_created: "Se ha creado una nueva conversación #%{conversation_id}"
+          conversation_updated: "Se ha actualizado la conversación #%{conversation_id}"
+          message_created: "Se ha creado un nuevo mensaje en la conversación #%{conversation_id}"
+          view_conversation: "Ver conversación"
+    conversations:
+      reply:
+        email_subject: "Nueva actualización en su conversación"
+        transcript_subject: "Transcripción de la conversación"
+        email:
+          header:
+            friendly_name: "%{sender_name} de %{business_name} <%{from_email}>"
+            professional_name: "%{business_name} <%{from_email}>"
+    templates:
+      conversation_reply:
+        greeting: "Hola %{name}"
+        new_messages: "Tienes nuevos mensajes en tu conversación."
+        you: "Tú"
+        bot: "Bot"
+        rate_conversation: "Haz clic aquí para calificar la conversación."
+        attachments:
+          single: "Este mensaje contiene un archivo adjunto."
+          multiple: "Este mensaje contiene archivos adjuntos."
+          view: "Ver el archivo adjunto aquí"
+        previous_message:
+          wrote: "escribió:"
+          on_date: "El %{date} a las %{time}"
+        email_details:
+          from: "De:"
+          subject: "Asunto:"
+          to: "Para:"
+          cc: "CC:"
+          bcc: "CCO:"
+        click_here: "haz clic aquí"

@@ -1,0 +1,85 @@
+{
+  "LABEL_MGMT": {
+    "HEADER": "Etiquetas",
+    "HEADER_BTN_TXT": "Adicionar Etiqueta",
+    "LOADING": "Buscando etiquetas",
+    "DESCRIPTION": "As etiquetas ajudam a categorizar e priorizar conversas e leads. Pode atribuir uma etiqueta a uma conversa ou contacto usando o painel lateral.",
+    "LEARN_MORE": "Learn more about labels",
+    "SEARCH_404": "Não existem itens que correspondam a esta consulta",
+    "LIST": {
+      "404": "Não há etiquetas disponíveis nesta conta.",
+      "TITLE": "Gerir etiquetas",
+      "DESC": "As etiquetas permitem agrupar as conversas.",
+      "TABLE_HEADER": [
+        "Name",
+        "Description",
+        "Color"
+      ]
+    },
+    "FORM": {
+      "NAME": {
+        "LABEL": "Nome da Etiqueta",
+        "PLACEHOLDER": "Nome da etiqueta",
+        "REQUIRED_ERROR": "O nome da etiqueta é obrigatório",
+        "MINIMUM_LENGTH_ERROR": "É necessário um comprimento mínimo de 2",
+        "VALID_ERROR": "Apenas são permitidos alfabetos, números, hífen e sublinhado"
+      },
+      "DESCRIPTION": {
+        "LABEL": "Descrição",
+        "PLACEHOLDER": "Descrição da etiqueta"
+      },
+      "COLOR": {
+        "LABEL": "Cor"
+      },
+      "SHOW_ON_SIDEBAR": {
+        "LABEL": "Mostrar etiqueta na barra lateral"
+      },
+      "EDIT": "Edit",
+      "CREATE": "Create",
+      "DELETE": "Delete",
+      "CANCEL": "Cancel"
+    },
+    "SUGGESTIONS": {
+      "TOOLTIP": {
+        "SINGLE_SUGGESTION": "Adicionar etiqueta à conversa",
+        "MULTIPLE_SUGGESTION": "Selecionar esta etiqueta",
+        "DESELECT": "Desselecionar etiqueta",
+        "DISMISS": "Descartar sugestão"
+      },
+      "POWERED_BY": "Chatwoot AI",
+      "DISMISS": "Dismiss",
+      "ADD_SELECTED_LABELS": "Adicionar etiquetas selecionadas",
+      "ADD_SELECTED_LABEL": "Adicionar etiqueta selecionada",
+      "ADD_ALL_LABELS": "Adicionar todas as etiquetas",
+      "SUGGESTED_LABELS": "Etiquetas sugeridas"
+    },
+    "ADD": {
+      "TITLE": "Adicionar etiqueta",
+      "DESC": "As etiquetas permitem agrupar as conversas.",
+      "API": {
+        "SUCCESS_MESSAGE": "Etiqueta adicionada com sucesso",
+        "ERROR_MESSAGE": "Ocorreu um erro, por favor tente novamente"
+      }
+    },
+    "EDIT": {
+      "TITLE": "Editar etiqueta",
+      "API": {
+        "SUCCESS_MESSAGE": "Etiqueta atualizada com sucesso",
+        "ERROR_MESSAGE": "Ocorreu um erro, por favor tente novamente"
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Delete",
+      "API": {
+        "SUCCESS_MESSAGE": "Etiqueta eliminada com sucesso",
+        "ERROR_MESSAGE": "Ocorreu um erro, por favor tente novamente"
+      },
+      "CONFIRM": {
+        "TITLE": "Confirmar eliminação",
+        "MESSAGE": "Tem a certeza que deseja eliminar ",
+        "YES": "Sim, eliminar ",
+        "NO": "Não, manter "
+      }
+    }
+  }
+}

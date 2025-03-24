@@ -1,0 +1,126 @@
+{
+  "CAMPAIGN": {
+    "HEADER": "Campañas",
+    "SIDEBAR_TXT": "Los mensajes proactivos permiten al cliente enviar mensajes salientes a sus contactos, lo que desencadenaría más conversaciones. Haga clic en <b>Agregar Campaña</b> para crear una nueva campaña. También puede editar o eliminar una campaña existente haciendo clic en el botón Editar o Eliminar.",
+    "HEADER_BTN_TXT": {
+      "ONE_OFF": "Crear una campaña única",
+      "ONGOING": "Crear una campaña continua"
+    },
+    "ADD": {
+      "TITLE": "Crear una campaña",
+      "DESC": "Los mensajes proactivos permiten al cliente enviar mensajes salientes a sus contactos, lo que desencadenaría más conversaciones.",
+      "CANCEL_BUTTON_TEXT": "Cancelar",
+      "CREATE_BUTTON_TEXT": "Crear",
+      "FORM": {
+        "TITLE": {
+          "LABEL": "Título",
+          "PLACEHOLDER": "Por favor ingrese el título de la campaña",
+          "ERROR": "El título es obligatorio"
+        },
+        "SCHEDULED_AT": {
+          "LABEL": "Hora programada",
+          "PLACEHOLDER": "Por favor seleccione la hora",
+          "CONFIRM": "Confirmar",
+          "ERROR": "La hora programada es obligatoria"
+        },
+        "AUDIENCE": {
+          "LABEL": "Audiencia",
+          "PLACEHOLDER": "Seleccione las etiquetas de los clientes",
+          "ERROR": "La audiencia es obligatoria"
+        },
+        "INBOX": {
+          "LABEL": "Seleccionar Bandeja de Entrada",
+          "PLACEHOLDER": "Seleccione la Bandeja de Entrada",
+          "ERROR": "La Bandeja de Entrada es obligatoria"
+        },
+        "MESSAGE": {
+          "LABEL": "Mensaje",
+          "PLACEHOLDER": "Por favor ingrese el mensaje de la campaña",
+          "ERROR": "El mensaje es obligatorio"
+        },
+        "SENT_BY": {
+          "LABEL": "Enviado por",
+          "PLACEHOLDER": "Por favor seleccione el contenido de la campaña",
+          "ERROR": "El remitente es obligatorio"
+        },
+        "END_POINT": {
+          "LABEL": "URL",
+          "PLACEHOLDER": "Por favor ingrese la URL",
+          "ERROR": "Por favor ingrese una URL válida"
+        },
+        "TIME_ON_PAGE": {
+          "LABEL": "Tiempo en la página (Segundos)",
+          "PLACEHOLDER": "Por favor ingrese el tiempo",
+          "ERROR": "El tiempo en la página es obligatorio"
+        },
+        "ENABLED": "Habilitar campaña",
+        "TRIGGER_ONLY_BUSINESS_HOURS": "Activar solo durante el horario laboral",
+        "SUBMIT": "Agregar Campaña"
+      },
+      "API": {
+        "SUCCESS_MESSAGE": "Campaña creada con éxito",
+        "ERROR_MESSAGE": "Hubo un error. Por favor, inténtelo de nuevo."
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Eliminar",
+      "CONFIRM": {
+        "TITLE": "Confirmar Eliminación",
+        "MESSAGE": "¿Está seguro de eliminar?",
+        "YES": "Sí, Eliminar",
+        "NO": "No, Conservar"
+      },
+      "API": {
+        "SUCCESS_MESSAGE": "Campaña eliminada con éxito",
+        "ERROR_MESSAGE": "No se pudo eliminar la campaña. Por favor, inténtelo de nuevo más tarde."
+      }
+    },
+    "EDIT": {
+      "TITLE": "Editar campaña",
+      "UPDATE_BUTTON_TEXT": "Actualizar",
+      "API": {
+        "SUCCESS_MESSAGE": "Campaña actualizada con éxito",
+        "ERROR_MESSAGE": "Hubo un error, por favor inténtelo de nuevo"
+      }
+    },
+    "LIST": {
+      "LOADING_MESSAGE": "Cargando campañas...",
+      "404": "No hay campañas creadas para esta bandeja de entrada.",
+      "TABLE_HEADER": {
+        "TITLE": "Título",
+        "MESSAGE": "Mensaje",
+        "INBOX": "Bandeja de Entrada",
+        "STATUS": "Estado",
+        "SENDER": "Remitente",
+        "URL": "URL",
+        "SCHEDULED_AT": "Hora programada",
+        "TIME_ON_PAGE": "Tiempo (Segundos)",
+        "CREATED_AT": "Creado en"
+      },
+      "BUTTONS": {
+        "ADD": "Agregar",
+        "EDIT": "Editar",
+        "DELETE": "Eliminar"
+      },
+      "STATUS": {
+        "ENABLED": "Habilitado",
+        "DISABLED": "Deshabilitado",
+        "COMPLETED": "Completado",
+        "ACTIVE": "Activo"
+      },
+      "SENDER": {
+        "BOT": "Bot"
+      }
+    },
+    "ONE_OFF": {
+      "HEADER": "Campañas únicas",
+      "404": "No hay campañas únicas creadas",
+      "INBOXES_NOT_FOUND": "Por favor cree una bandeja de entrada de SMS y comience a agregar campañas"
+    },
+    "ONGOING": {
+      "HEADER": "Campañas continuas",
+      "404": "No hay campañas continuas creadas",
+      "INBOXES_NOT_FOUND": "Por favor cree una bandeja de entrada de sitio web y comience a agregar campañas"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[111],{2283:function(n,t,e){"use strict";e.r(t);var o=e(8),a=Object(o.a)({},(function(){var n=this;return(0,n._self._c)("div",[n._v(n._s("Component to create a category"))])}),[],!1,null,null,null);t.default=a.exports}}]);

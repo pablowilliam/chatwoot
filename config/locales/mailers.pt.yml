@@ -1,0 +1,135 @@
+pt:
+  mailers:
+    administrator_notifications:
+      channel_notifications:
+        slack_disconnect:
+          subject: "A sua integração com o Slack expirou"
+        dialogflow_disconnect:
+          subject: "A sua integração com o Dialogflow foi desconectada"
+        facebook_disconnect:
+          subject: "A conexão com a sua página do Facebook expirou"
+        whatsapp_disconnect:
+          subject: "A sua conexão com o WhatsApp expirou"
+        email_disconnect:
+          subject: "A sua caixa de entrada de e-mail foi desconectada. Por favor, atualize as credenciais SMTP/IMAP"
+        contact_import_complete:
+          subject: "Importação de Contactos Concluída"
+        contact_import_failed:
+          subject: "Falha na Importação de Contactos"
+        contact_export_complete:
+          subject: "O seu ficheiro de exportação de contactos está disponível para download"
+        automation_rule_disabled:
+          subject: "Regra de automação desativada devido a erros de validação"
+      templates:
+        automation_rule:
+          greeting: "Olá"
+          disabled:
+            message: "A regra de automação <b>%{rule_name}</b> foi desativada porque contém condições inválidas."
+            explanation: "Isto geralmente acontece quando elimina atributos personalizados que ainda estão a ser utilizados nas regras de automação."
+            action: "Clique aqui para atualizar as condições."
+        contact:
+          export:
+            message: "O seu ficheiro de exportação de contactos está pronto."
+            action: "Clique aqui para descarregar."
+          import:
+            complete:
+              success: "Foram importados %{imported} contactos com sucesso."
+              failed: "Não foi possível importar %{failed} contactos."
+              action: "Clique aqui para ver os registos falhados."
+            failed:
+              message: "A importação de contactos falhou."
+              explanation: "Por favor, verifique o formato do ficheiro e tente novamente."
+        channel:
+          slack:
+            message: "A sua integração com o Slack expirou."
+            action: "Clique aqui para reconectar."
+          dialogflow:
+            message: "A sua integração com o Dialogflow foi desconectada."
+            action: "Clique aqui para reconectar."
+          facebook:
+            message: "A sua ligação com o Facebook expirou."
+            action: "Clique aqui para reconectar."
+          whatsapp:
+            message: "A sua ligação com o WhatsApp expirou."
+            action: "Clique aqui para reconectar."
+          email:
+            message: "A sua caixa de correio foi desconectada."
+            explanation: "Por favor, atualize as credenciais de SMTP/IMAP."
+            action: "Clique aqui para atualizar."
+    agent_notifications:
+      conversation_notifications:
+        conversation_creation:
+          subject: "%{agent_name}, Uma nova conversa [ID - %{conversation_id}] foi criada em %{inbox_name}"
+        conversation_assignment:
+          subject: "%{agent_name}, Uma nova conversa [ID - %{conversation_id}] foi atribuída a si"
+        conversation_mention:
+          subject: "%{agent_name}, Foi mencionado na conversa [ID - %{conversation_id}]"
+        assigned_conversation_new_message:
+          subject: "%{agent_name}, Nova mensagem na sua conversa atribuída [ID - %{conversation_id}]"
+        participating_conversation_new_message:
+          subject: "%{agent_name}, Nova mensagem na sua conversa participante [ID - %{conversation_id}]"
+      templates:
+        conversation:
+          greeting: "Olá!"
+          assigned_new_message: "Recebeu uma nova mensagem na conversa #%{conversation_id} atribuída a si."
+          participating_new_message: "Recebeu uma nova mensagem numa conversa em que está a participar #%{conversation_id}."
+          assignment:
+            message: "É hora de salvar o mundo! Foi-lhe atribuída uma nova conversa #%{conversation_id}."
+          creation:
+            message: "Foi criada uma nova conversa (#%{conversation_id}) em %{inbox_name}."
+          mention:
+            message: "Foi mencionado numa conversa por %{user_name} em #%{conversation_id}."
+          previous_messages: "Mensagens anteriores"
+          you: "Você"
+          attachment: "Anexo"
+          view_attachment: "Ver anexo"
+          view_conversation: "Ver conversa"
+          email_details:
+            from: "De:"
+            subject: "Assunto:"
+            to: "Para:"
+            cc: "CC:"
+            bcc: "BCC:"
+          sla:
+            first_response_missed: "A conversa #%{conversation_id} em %{inbox_name} perdeu o SLA para a primeira resposta sob a política %{sla_policy_name}."
+            next_response_missed: "A conversa #%{conversation_id} em %{inbox_name} perdeu o SLA para a próxima resposta sob a política %{sla_policy_name}."
+            resolution_missed: "A conversa #%{conversation_id} em %{inbox_name} perdeu o SLA para o tempo de resolução sob a política %{sla_policy_name}."
+    team_notifications:
+      automation:
+        subject: "Este e-mail foi enviado através de ações de regras de automação."
+      templates:
+        automation:
+          greeting: "Este é um e-mail do Sistema de Automação"
+          conversation_created: "Foi criada uma nova conversa #%{conversation_id}"
+          conversation_updated: "A conversa #%{conversation_id} foi atualizada"
+          message_created: "Foi criada uma nova mensagem na conversa #%{conversation_id}"
+          view_conversation: "Ver conversa"
+    conversations:
+      reply:
+        email_subject: "Nova atualização na sua conversa"
+        transcript_subject: "Transcrição da conversa"
+        email:
+          header:
+            friendly_name: "%{sender_name} de %{business_name} <%{from_email}>"
+            professional_name: "%{business_name} <%{from_email}>"
+    templates:
+      conversation_reply:
+        greeting: "Olá %{name}"
+        new_messages: "Tem novas mensagens na sua conversa."
+        you: "Você"
+        bot: "Bot"
+        rate_conversation: "Clique aqui para avaliar a conversa."
+        attachments:
+          single: "Esta mensagem contém um anexo."
+          multiple: "Esta mensagem contém anexos."
+          view: "Ver o anexo aqui"
+        previous_message:
+          wrote: "escreveu:"
+          on_date: "Em %{date} às %{time}"
+        email_details:
+          from: "De:"
+          subject: "Assunto:"
+          to: "Para:"
+          cc: "CC:"
+          bcc: "BCC:"
+        click_here: "clique aqui"

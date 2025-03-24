@@ -1,0 +1,76 @@
+{
+  "AGENT_BOTS": {
+    "HEADER": "Bots",
+    "LOADING_EDITOR": "Carregando editor...",
+    "HEADER_BTN_TXT": "Adicionar configuração de bot",
+    "SIDEBAR_TXT": "<p><b>Agent Bots</b> <p>Os Agent Bots são como os membros mais fabulosos da sua equipe. Eles podem lidar com as pequenas coisas, para que você possa se concentrar no que realmente importa. Experimente-os.</p> <p> Você pode gerenciar seus bots nesta página ou criar novos usando o botão 'Adicionar configuração de bot'.</p> <p> Abra o <a href=\"https://www.chatwoot.com/hc/chatwoot-user-guide-cloud-version/articles/1677497472-how-to-use-agent-bots\" target=\"blank\">manual dos Agent Bots</a> em outra aba para uma ajuda.</p>",
+    "CSML_BOT_EDITOR": {
+      "NAME": {
+        "LABEL": "Nome do bot",
+        "PLACEHOLDER": "Nomeie seu bot.",
+        "ERROR": "O nome do bot é obrigatório."
+      },
+      "DESCRIPTION": {
+        "LABEL": "Descrição do bot",
+        "PLACEHOLDER": "O que este bot faz?"
+      },
+      "BOT_CONFIG": {
+        "ERROR": "Por favor, insira sua configuração de bot CSML acima.",
+        "API_ERROR": "Sua configuração CSML é inválida. Por favor, corrija e tente novamente."
+      },
+      "SUBMIT": "Validar e salvar"
+    },
+    "BOT_CONFIGURATION": {
+      "TITLE": "Selecione um bot agente",
+      "DESC": "Atribua um Bot Agente à sua caixa de entrada. Eles podem lidar com conversas iniciais e transferi-las para um agente ao vivo quando necessário.",
+      "SUBMIT": "Atualizar",
+      "DISCONNECT": "Desconectar bot",
+      "SUCCESS_MESSAGE": "Bot agente atualizado com sucesso.",
+      "DISCONNECTED_SUCCESS_MESSAGE": "Bot agente desconectado com sucesso.",
+      "ERROR_MESSAGE": "Não foi possível atualizar o bot agente. Por favor, tente novamente.",
+      "DISCONNECTED_ERROR_MESSAGE": "Não foi possível desconectar o bot agente. Por favor, tente novamente.",
+      "SELECT_PLACEHOLDER": "Selecione o bot",
+      "AGENT_HELPER": "Ajudante Avançado",
+      "AGENT_HELPER_DESC": "Habilite um agente especializado em seu negócio, ele vai te auxiliar nas resposta e resumo de suas conversas.",
+      "AGENT_HELPER_PROMPT": " Defina o contexto e as instruções para que a IA gere uma resposta. Você deve fornecer um prompt cuidadosamente elaborado para que a IA possa gerar uma resposta relevante e precisa."
+    },
+    "ADD": {
+      "TITLE": "Configurar novo bot",
+      "CANCEL_BUTTON_TEXT": "Cancelar",
+      "API": {
+        "SUCCESS_MESSAGE": "Bot adicionado com sucesso.",
+        "ERROR_MESSAGE": "Não foi possível adicionar o bot. Por favor, tente novamente mais tarde."
+      }
+    },
+    "LIST": {
+      "404": "Nenhum bot encontrado. Você pode criar um bot clicando no botão 'Configurar novo bot' ↗",
+      "LOADING": "Buscando bots...",
+      "TYPE": "Tipo de bot"
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Excluir",
+      "TITLE": "Excluir bot",
+      "SUBMIT": "Excluir",
+      "CANCEL_BUTTON_TEXT": "Cancelar",
+      "DESCRIPTION": "Tem certeza de que deseja excluir este bot? Esta ação é irreversível.",
+      "API": {
+        "SUCCESS_MESSAGE": "Bot excluído com sucesso.",
+        "ERROR_MESSAGE": "Não foi possível excluir o bot. Por favor, tente novamente."
+      }
+    },
+    "EDIT": {
+      "BUTTON_TEXT": "Editar",
+      "LOADING": "Buscando bots...",
+      "TITLE": "Editar bot",
+      "CANCEL_BUTTON_TEXT": "Cancelar",
+      "API": {
+        "SUCCESS_MESSAGE": "Bot atualizado com sucesso.",
+        "ERROR_MESSAGE": "Não foi possível atualizar o bot. Por favor, tente novamente."
+      }
+    },
+    "TYPES": {
+      "WEBHOOK": "Bot de webhook",
+      "CSML": "Bot CSML"
+    }
+  }
+}

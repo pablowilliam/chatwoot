@@ -1,0 +1,131 @@
+{
+  "CHAT_LIST": {
+    "LOADING": "Cargando conversaciones",
+    "LOAD_MORE_CONVERSATIONS": "Cargar más conversaciones",
+    "EOF": "Todas las conversaciones cargadas 🎉",
+    "LIST": {
+      "404": "No hay conversaciones activas en este grupo."
+    },
+    "TAB_HEADING": "Conversaciones",
+    "MENTION_HEADING": "Menciones",
+    "UNATTENDED_HEADING": "No atendidas",
+    "SEARCH": {
+      "INPUT": "Buscar personas, chats, respuestas guardadas .."
+    },
+    "FILTER_ALL": "Todo",
+    "ASSIGNEE_TYPE_TABS": {
+      "me": "Mías",
+      "unassigned": "No asignadas",
+      "all": "Todas"
+    },
+    "CHAT_STATUS_FILTER_ITEMS": {
+      "open": {
+        "TEXT": "Abiertas"
+      },
+      "resolved": {
+        "TEXT": "Resueltas"
+      },
+      "pending": {
+        "TEXT": "Pendientes"
+      },
+      "snoozed": {
+        "TEXT": "Pospuestas"
+      },
+      "all": {
+        "TEXT": "Todas"
+      }
+    },
+    "VIEW_FILTER": "Ver",
+    "SORT_TOOLTIP_LABEL": "Ordenar conversaciones",
+    "CHAT_SORT": {
+      "STATUS": "Estado",
+      "ORDER_BY": "Ordenar por"
+    },
+    "CHAT_TIME_STAMP": {
+      "CREATED": {
+        "LATEST": "Creado",
+        "OLDEST": "Creado en:"
+      },
+      "LAST_ACTIVITY": {
+        "NOT_ACTIVE": "Última actividad:",
+        "ACTIVE": "Última actividad"
+      }
+    },
+    "SORT_ORDER_ITEMS": {
+      "last_activity_at_asc": {
+        "TEXT": "Última actividad: Más antiguas primero"
+      },
+      "last_activity_at_desc": {
+        "TEXT": "Última actividad: Más recientes primero"
+      },
+      "created_at_desc": {
+        "TEXT": "Creado en: Más recientes primero"
+      },
+      "created_at_asc": {
+        "TEXT": "Creado en: Más antiguas primero"
+      },
+      "priority_desc": {
+        "TEXT": "Prioridad: Más alta primero"
+      },
+      "priority_asc": {
+        "TEXT": "Prioridad: Más baja primero"
+      },
+      "waiting_since_asc": {
+        "TEXT": "Respuesta pendiente: Más largo primero"
+      },
+      "waiting_since_desc": {
+        "TEXT": "Respuesta pendiente: Más corto primero"
+      }
+    },
+    "ATTACHMENTS": {
+      "image": {
+        "CONTENT": "Mensaje de imagen"
+      },
+      "audio": {
+        "CONTENT": "Mensaje de audio"
+      },
+      "video": {
+        "CONTENT": "Mensaje de video"
+      },
+      "file": {
+        "CONTENT": "Archivo adjunto"
+      },
+      "location": {
+        "CONTENT": "Ubicación"
+      },
+      "fallback": {
+        "CONTENT": "ha compartido una URL"
+      }
+    },
+    "CHAT_SORT_BY_FILTER": {
+      "TITLE": "Ordenar conversación",
+      "DROPDOWN_TITLE": "Ordenar por",
+      "ITEMS": {
+        "LATEST": {
+          "NAME": "Última actividad en",
+          "LABEL": "Última actividad"
+        },
+        "CREATED_AT": {
+          "NAME": "Creado en",
+          "LABEL": "Creado en"
+        },
+        "LAST_USER_MESSAGE_AT": {
+          "NAME": "Último mensaje del usuario en",
+          "LABEL": "Último mensaje"
+        }
+      }
+    },
+    "RECEIVED_VIA_EMAIL": "Recibido por correo electrónico",
+    "VIEW_TWEET_IN_TWITTER": "Ver tweet en Twitter",
+    "REPLY_TO_TWEET": "Responder a este tweet",
+    "LINK_TO_STORY": "Ir a la historia de Instagram",
+    "SENT": "Enviado con éxito",
+    "READ": "Leído con éxito",
+    "DELIVERED": "Entregado con éxito",
+    "NO_MESSAGES": "Sin mensajes",
+    "NO_CONTENT": "No hay contenido disponible",
+    "HIDE_QUOTED_TEXT": "Ocultar texto citado",
+    "SHOW_QUOTED_TEXT": "Mostrar texto citado",
+    "MESSAGE_READ": "Leído"
+  }
+}

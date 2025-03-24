@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= t('.page_title') %></title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; text-align: center;">
+  <div style="width: 100%; margin: 0 auto; padding: 20px; box-sizing: border-box; text-align: center;">
+    <p style="font-size: 24px; font-family: Arial; font-weight: bold;"><%= t('.title') %></p>
+    <div style="margin: 10px 0; border-top: 1px solid #eeeeee;"></div>
+    <div style="font-size: 16px; font-family: Arial, sans-serif; text-align: center;">
+      <p><%= t('.greeting', email: @email) %></p>
+      <p><%= t('.message') %></p>
+      <p><%= t('.instruction') %></p>
+      <p><%= link_to t('.action'), unlock_url(@resource, unlock_token: @token), style: "display: inline-block; padding: 15px 25px; font-size: 18px; font-family: Arial; background-color: #29a2a7; color: #ffffff; text-decoration: none; border-radius: 0;" %></p>
+      <p><%= t('.contact_admin') %></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+{
+  "TEAMS_SETTINGS": {
+    "NEW_TEAM": "Criar nova equipa",
+    "HEADER": "Equipas",
+    "LOADING": "A buscar equipas",
+    "DESCRIPTION": "As equipas permitem organizar agentes em grupos com base nas suas responsabilidades. Um agente pode pertencer a várias equipas. Ao trabalhar colaborativamente, pode atribuir conversas a equipas específicas.",
+    "LEARN_MORE": "Saiba mais sobre equipas",
+    "LIST": {
+      "404": "Não há equipas criadas nesta conta.",
+      "EDIT_TEAM": "Editar equipa",
+      "NONE": "Nenhuma"
+    },
+    "CREATE_FLOW": {
+      "CREATE": {
+        "TITLE": "Criar uma nova equipa",
+        "DESC": "Adicione um título e uma descrição à sua nova equipa."
+      },
+      "AGENTS": {
+        "BUTTON_TEXT": "Adicionar agentes à equipa",
+        "TITLE": "Adicionar agentes à equipa - %{teamName}",
+        "DESC": "Adicione agentes à sua equipa recém-criada. Isto permite-lhe colaborar como uma equipa em conversas, ser notificado sobre novos eventos na mesma conversa."
+      },
+      "WIZARD": [
+        {
+          "title": "Criar",
+          "route": "settings_teams_new",
+          "body": "Crie uma nova equipa de agentes."
+        },
+        {
+          "title": "Adicionar Agentes",
+          "route": "settings_teams_add_agents",
+          "body": "Adicione agentes à equipa."
+        },
+        {
+          "title": "Concluir",
+          "route": "settings_teams_finish",
+          "body": "Está tudo pronto para começar!"
+        }
+      ]
+    },
+    "EDIT_FLOW": {
+      "CREATE": {
+        "TITLE": "Editar os detalhes da sua equipa",
+        "DESC": "Edite o título e a descrição da sua equipa.",
+        "BUTTON_TEXT": "Atualizar equipa"
+      },
+      "AGENTS": {
+        "BUTTON_TEXT": "Atualizar agentes na equipa",
+        "TITLE": "Adicionar agentes à equipa - %{teamName}",
+        "DESC": "Adicione agentes à sua equipa recém-criada. Todos os agentes adicionados serão notificados quando uma conversa for atribuída a esta equipa."
+      },
+      "WIZARD": [
+        {
+          "title": "Detalhes da equipa",
+          "route": "settings_teams_edit",
+          "body": "Altere o nome, descrição e outros detalhes."
+        },
+        {
+          "title": "Editar Agentes",
+          "route": "settings_teams_edit_members",
+          "body": "Edite os agentes na sua equipa."
+        },
+        {
+          "title": "Concluir",
+          "route": "settings_teams_edit_finish",
+          "body": "Está tudo pronto para começar!"
+        }
+      ]
+    },
+    "TEAM_FORM": {
+      "ERROR_MESSAGE": "Não foi possível guardar os detalhes da equipa. Tente novamente."
+    },
+    "AGENTS": {
+      "AGENT": "AGENTE",
+      "EMAIL": "EMAIL",
+      "BUTTON_TEXT": "Adicionar agentes",
+      "ADD_AGENTS": "A adicionar agentes à sua equipa...",
+      "SELECT": "selecionar",
+      "SELECT_ALL": "selecionar todos os agentes",
+      "SELECTED_COUNT": "%{selected} de %{total} agentes selecionados."
+    },
+    "ADD": {
+      "TITLE": "Adicionar agentes à equipa - %{teamName}",
+      "DESC": "Adicione agentes à sua equipa recém-criada. Isto permite-lhe colaborar como uma equipa em conversas, ser notificado sobre novos eventos na mesma conversa.",
+      "SELECT": "selecionar",
+      "SELECT_ALL": "selecionar todos os agentes",
+      "SELECTED_COUNT": "%{selected} de %{total} agentes selecionados.",
+      "BUTTON_TEXT": "Adicionar agentes",
+      "AGENT_VALIDATION_ERROR": "Selecione pelo menos um agente."
+    },
+    "FINISH": {
+      "TITLE": "A sua equipa está pronta!",
+      "MESSAGE": "Agora pode colaborar como uma equipa em conversas. Bom suporte ",
+      "BUTTON_TEXT": "Concluir"
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Eliminar",
+      "API": {
+        "SUCCESS_MESSAGE": "Equipa eliminada com sucesso.",
+        "ERROR_MESSAGE": "Não foi possível eliminar a equipa. Tente novamente."
+      },
+      "CONFIRM": {
+        "TITLE": "Tem a certeza de que deseja eliminar a equipa?",
+        "PLACE_HOLDER": "Por favor, digite {teamName} para confirmar",
+        "MESSAGE": "Eliminar a equipa removerá a atribuição da equipa das conversas atribuídas a esta equipa.",
+        "YES": "Eliminar ",
+        "NO": "Cancelar"
+      }
+    },
+    "SETTINGS": "Configurações",
+    "FORM": {
+      "UPDATE": "Atualizar equipa",
+      "CREATE": "Criar equipa",
+      "NAME": {
+        "LABEL": "Nome da equipa",
+        "PLACEHOLDER": "Exemplo: Vendas, Suporte ao Cliente"
+      },
+      "DESCRIPTION": {
+        "LABEL": "Descrição da equipa",
+        "PLACEHOLDER": "Breve descrição sobre esta equipa."
+      },
+      "AUTO_ASSIGN": {
+        "LABEL": "Permitir atribuição automática para esta equipa."
+      },
+      "SUBMIT_CREATE": "Criar equipa"
+    }
+  }
+}

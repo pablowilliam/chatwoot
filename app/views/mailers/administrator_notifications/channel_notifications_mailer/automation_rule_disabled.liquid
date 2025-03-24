@@ -1,0 +1,8 @@
+<p>{{ 'mailers.administrator_notifications.templates.automation_rule.greeting' | t }}</p>
+
+<p>{{ 'mailers.administrator_notifications.templates.automation_rule.disabled.message' | t: rule_name: meta['rule_name'] }}</p>
+<p>{{ 'mailers.administrator_notifications.templates.automation_rule.disabled.explanation' | t }}</p>
+
+<p>
+<a href="{{action_url}}">{{ 'mailers.administrator_notifications.templates.automation_rule.disabled.action' | t }}</a>
+</p>

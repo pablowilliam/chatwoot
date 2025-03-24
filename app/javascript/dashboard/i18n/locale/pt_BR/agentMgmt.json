@@ -1,0 +1,121 @@
+{
+  "AGENT_MGMT": {
+    "HEADER": "Agents",
+    "HEADER_BTN_TXT": "Add Agent",
+    "LOADING": "Fetching Agent List",
+    "DESCRIPTION": "Um agente é um membro da sua equipe de suporte ao cliente que pode visualizar e responder às mensagens dos usuários. A lista abaixo mostra todos os agentes na sua conta.",
+    "LEARN_MORE": "Learn about user roles",
+    "AGENT_TYPES": {
+      "ADMINISTRATOR": "Administrator",
+      "AGENT": "Agent"
+    },
+    "LIST": {
+      "404": "Não há agentes associados a esta conta",
+      "TITLE": "Gerenciar agentes na sua equipe",
+      "DESC": "Você pode adicionar/remover agentes na sua equipe.",
+      "NAME": "Name",
+      "EMAIL": "EMAIL",
+      "STATUS": "Status",
+      "ACTIONS": "Actions",
+      "VERIFIED": "Verificado",
+      "VERIFICATION_PENDING": "Verificação Pendente",
+      "AVAILABLE_CUSTOM_ROLE": "Permissões de função personalizada disponíveis"
+    },
+    "ADD": {
+      "TITLE": "Adicionar agente à sua equipe",
+      "DESC": "Você pode adicionar pessoas que poderão lidar com o suporte para suas caixas de entrada.",
+      "CANCEL_BUTTON_TEXT": "Cancelar",
+      "FORM": {
+        "NAME": {
+          "LABEL": "Nome do Agente",
+          "PLACEHOLDER": "Por favor, insira o nome do agente"
+        },
+        "AGENT_TYPE": {
+          "LABEL": "Função",
+          "PLACEHOLDER": "Por favor, selecione uma função",
+          "ERROR": "Função é obrigatória"
+        },
+        "EMAIL": {
+          "LABEL": "Endereço de Email",
+          "PLACEHOLDER": "Por favor, insira um endereço de email do agente"
+        },
+        "SUBMIT": "Add Agent"
+      },
+      "API": {
+        "SUCCESS_MESSAGE": "Agente adicionado com sucesso",
+        "EXIST_MESSAGE": "Email do agente já está em uso, por favor, tente outro endereço de email",
+        "ERROR_MESSAGE": "Não foi possível conectar ao servidor Woot, por favor, tente novamente mais tarde"
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Delete",
+      "API": {
+        "SUCCESS_MESSAGE": "Agente deletado com sucesso",
+        "ERROR_MESSAGE": "Não foi possível conectar ao servidor Woot, por favor, tente novamente mais tarde"
+      },
+      "CONFIRM": {
+        "TITLE": "Confirmar Exclusão",
+        "MESSAGE": "Você tem certeza que deseja deletar ",
+        "YES": "Sim, Deletar ",
+        "NO": "Não, Manter "
+      }
+    },
+    "EDIT": {
+      "TITLE": "Editar agente",
+      "FORM": {
+        "NAME": {
+          "LABEL": "Nome do Agente",
+          "PLACEHOLDER": "Por favor, insira o nome do agente"
+        },
+        "AGENT_TYPE": {
+          "LABEL": "Função",
+          "PLACEHOLDER": "Por favor, selecione uma função",
+          "ERROR": "Função é obrigatória"
+        },
+        "EMAIL": {
+          "LABEL": "Endereço de Email",
+          "PLACEHOLDER": "Por favor, insira um endereço de email do agente"
+        },
+        "AGENT_AVAILABILITY": {
+          "LABEL": "Disponibilidade",
+          "PLACEHOLDER": "Por favor, selecione um status de disponibilidade",
+          "ERROR": "Disponibilidade é obrigatória"
+        },
+        "SUBMIT": "Edit Agent"
+      },
+      "BUTTON_TEXT": "Edit",
+      "CANCEL_BUTTON_TEXT": "Cancelar",
+      "API": {
+        "SUCCESS_MESSAGE": "Agente atualizado com sucesso",
+        "ERROR_MESSAGE": "Não foi possível conectar ao servidor Woot, por favor, tente novamente mais tarde"
+      },
+      "PASSWORD_RESET": {
+        "ADMIN_RESET_BUTTON": "Reset Password",
+        "ADMIN_SUCCESS_MESSAGE": "Um email com instruções para redefinir a senha foi enviado ao agente",
+        "SUCCESS_MESSAGE": "Senha do agente redefinida com sucesso",
+        "ERROR_MESSAGE": "Não foi possível conectar ao servidor Woot, por favor, tente novamente mais tarde"
+      }
+    },
+    "SEARCH": {
+      "NO_RESULTS": "Nenhum resultado encontrado."
+    },
+    "MULTI_SELECTOR": {
+      "PLACEHOLDER": "Nenhum",
+      "TITLE": {
+        "AGENT": "Selecione o agente",
+        "TEAM": "Selecione a equipe"
+      },
+      "SEARCH": {
+        "NO_RESULTS": {
+          "AGENT": "Nenhum agente encontrado",
+          "TEAM": "Nenhuma equipe encontrada"
+        },
+        "PLACEHOLDER": {
+          "AGENT": "Procurar agentes",
+          "TEAM": "Procurar equipes",
+          "INPUT": "Procurar por agentes"
+        }
+      }
+    }
+  }
+}

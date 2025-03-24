@@ -1,0 +1,85 @@
+{
+  "LABEL_MGMT": {
+    "HEADER": "Marcadores",
+    "HEADER_BTN_TXT": "Adicionar marcador",
+    "LOADING": "Buscando marcadores",
+    "DESCRIPTION": "Os rótulos ajudam você a categorizar e priorizar conversas e leads. Você pode atribuir um rótulo a uma conversa ou contato usando o painel lateral.",
+    "LEARN_MORE": "Learn more about labels",
+    "SEARCH_404": "Não há itens correspondentes a esta consulta",
+    "LIST": {
+      "404": "Não há rótulos disponíveis nesta conta.",
+      "TITLE": "Gerenciar rótulos",
+      "DESC": "Os rótulos permitem agrupar as conversas.",
+      "TABLE_HEADER": [
+        "Name",
+        "Description",
+        "Color"
+      ]
+    },
+    "FORM": {
+      "NAME": {
+        "LABEL": "Nome do Rótulo",
+        "PLACEHOLDER": "Nome do rótulo",
+        "REQUIRED_ERROR": "O nome do rótulo é obrigatório",
+        "MINIMUM_LENGTH_ERROR": "É necessário um comprimento mínimo de 2",
+        "VALID_ERROR": "Apenas letras, números, hífen e sublinhado são permitidos"
+      },
+      "DESCRIPTION": {
+        "LABEL": "Descrição",
+        "PLACEHOLDER": "Descrição do rótulo"
+      },
+      "COLOR": {
+        "LABEL": "Cor"
+      },
+      "SHOW_ON_SIDEBAR": {
+        "LABEL": "Mostrar rótulo na barra lateral"
+      },
+      "EDIT": "Editar",
+      "CREATE": "Criar",
+      "DELETE": "Excluir",
+      "CANCEL": "Cancelar"
+    },
+    "SUGGESTIONS": {
+      "TOOLTIP": {
+        "SINGLE_SUGGESTION": "Adicionar rótulo à conversa",
+        "MULTIPLE_SUGGESTION": "Selecionar este rótulo",
+        "DESELECT": "Desmarcar rótulo",
+        "DISMISS": "Descartar sugestão"
+      },
+      "POWERED_BY": "Chatwoot AI",
+      "DISMISS": "Descartar",
+      "ADD_SELECTED_LABELS": "Adicionar rótulos selecionados",
+      "ADD_SELECTED_LABEL": "Adicionar rótulo selecionado",
+      "ADD_ALL_LABELS": "Adicionar todos os rótulos",
+      "SUGGESTED_LABELS": "Rótulos sugeridos"
+    },
+    "ADD": {
+      "TITLE": "Adicionar rótulo",
+      "DESC": "Os rótulos permitem agrupar as conversas.",
+      "API": {
+        "SUCCESS_MESSAGE": "Rótulo adicionado com sucesso",
+        "ERROR_MESSAGE": "Houve um erro, por favor tente novamente"
+      }
+    },
+    "EDIT": {
+      "TITLE": "Editar rótulo",
+      "API": {
+        "SUCCESS_MESSAGE": "Rótulo atualizado com sucesso",
+        "ERROR_MESSAGE": "Houve um erro, por favor tente novamente"
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Excluir",
+      "API": {
+        "SUCCESS_MESSAGE": "Rótulo excluído com sucesso",
+        "ERROR_MESSAGE": "Houve um erro, por favor tente novamente"
+      },
+      "CONFIRM": {
+        "TITLE": "Confirmar exclusão",
+        "MESSAGE": "Tem certeza de que deseja excluir ",
+        "YES": "Sim, excluir ",
+        "NO": "Não, manter "
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<p><%= t('mailers.templates.conversation_reply.greeting', name: @contact.name) %></p>
+
+<p><%= t('mailers.templates.conversation_reply.new_messages') %></p>
+
+<% @messages.each do |message| %>
+  <tr>
+    <td>
+      <b><%= message.incoming? ? t('mailers.templates.conversation_reply.you') : message.sender&.available_name || message.sender&.name || t('mailers.templates.conversation_reply.bot') %></b>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 0px 16px; margin: 4px 0 8px 0; background: #F5FAFF; border-radius: 5px; display: inline-block; font-family: 'Helvetica Neue',Tahoma,Arial,sans-serif; text-align: start; unicode-bidi: plaintext;">
+      <% if (message.content_type == 'input_csat' && message.message_type == 'template') %>
+        <p><%= t('mailers.templates.conversation_reply.rate_conversation') %></p>
+      <% elsif message.content.present? %>
+        <%= ChatwootMarkdownRenderer.new(message.content).render_message %>
+      <% end %>
+      <% if message.attachments.count.positive? %>
+        <p>
+          <% if message.content.present? %>
+            <hr style="border: 0; border-bottom: 1px solid #AEC3D5;"/>
+          <% end %>
+          <%= message.attachments.count > 1 ? t('mailers.templates.conversation_reply.attachments.multiple') : t('mailers.templates.conversation_reply.attachments.single') %>
+          <% message.attachments.each do |attachment| %>
+            <br />- <%= t('mailers.templates.conversation_reply.attachments.view') %> <a href="<%= attachment.file_url %>" _target="blank"><%= t('mailers.templates.conversation_reply.click_here') %></a>.
+          <% end %>
+        </p>
+      <% end %>
+    </td>
+  </tr>
+<% end %>

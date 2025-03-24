@@ -1,0 +1,8 @@
+<p>{{ 'mailers.team_notifications.templates.automation.greeting' | t }}</p>
+
+<p>{{ custom_message }}</p>
+
+<p>
+  {{ 'mailers.team_notifications.templates.automation.conversation_created' | t: conversation_id: conversation.display_id }}
+  <a href="{{ action_url }}">{{ 'mailers.team_notifications.templates.automation.view_conversation' | t }}</a>
+</p>

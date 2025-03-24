@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[113],{2282:function(n,t,o){"use strict";o.r(t);var e=o(8),l=Object(e.a)({},(function(){var n=this;return(0,n._self._c)("div",[n._v(n._s("Component to view details of portal"))])}),[],!1,null,null,null);t.default=l.exports}}]);

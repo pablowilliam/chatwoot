@@ -1,0 +1,19 @@
+<p>{{ 'mailers.administrator_notifications.templates.automation_rule.greeting' | t }}</p>
+
+<p>{{ 'mailers.administrator_notifications.templates.contact.import.complete.success' | t: imported: meta['imported_contacts'] }}</p>
+
+<p>Número de registros importados: {{meta['imported_contacts']}}</p>
+
+<p>Número de registros com falha: {{meta['failed_contacts']}}</p>
+
+{% if meta['failed_contacts'] > 0 %}
+  <p>{{ 'mailers.administrator_notifications.templates.contact.import.complete.failed' | t: failed: meta['failed_contacts'] }}</p>
+
+  <p>
+    <a href="{{ action_url }}" target="_blank">{{ 'mailers.administrator_notifications.templates.contact.import.complete.action' | t }}</a>
+  </p>
+{% else %}
+  <p>
+    <a href="{{action_url}}">{{ 'mailers.administrator_notifications.templates.contact.import.complete.action' | t }}</a>
+  </p>
+{% endif %}
